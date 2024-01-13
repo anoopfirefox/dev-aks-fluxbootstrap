@@ -8,7 +8,8 @@ spec:
   dependsOn:
   - name: monitoring-kustomization-prometheus-stack
   interval: 1h0m0s
-  path: ./monitoring/configs
+  path: ./manifests/monitoring/monitoring-config
+  #path: ./monitoring/configs
   prune: true
   sourceRef:
     kind: GitRepository
